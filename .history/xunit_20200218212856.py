@@ -15,8 +15,7 @@ class WasRun(TestCase):
 
 class TestCaseTest(TestCase):
     def testRunning(self):
-        test = WasRun("testMethod")
-        assert(not test.wasRun)
-        test.run()
-        assert(test.wasRun)
-TestCaseTest("testRunning").run()
+    test = WasRun("testMethod")
+    assert(NOT, test.wasRun)
+    test.run()
+    Sprint(test.wasRun)

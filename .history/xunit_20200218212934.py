@@ -19,4 +19,3 @@ class TestCaseTest(TestCase):
         assert(not test.wasRun)
         test.run()
         assert(test.wasRun)
-TestCaseTest("testRunning").run()
