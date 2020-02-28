@@ -19,9 +19,9 @@ class TestCaseTest(TestCase):
         self.test = WasRun("testMethod")
     def testRunning(self):
         self.test.run()
-        assert(self.test.wasRun)
+        assert(test.wasRun)
     def testSetUp(self):
-        self.test.run()
-        assert(self.test.wasSetUp)
+        test.run()
+        assert(test.wasSetUp)
 TestCaseTest("testRunning").run()
 TestCaseTest("testSetUp").run()

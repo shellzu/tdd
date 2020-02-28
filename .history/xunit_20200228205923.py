@@ -21,7 +21,7 @@ class TestCaseTest(TestCase):
         self.test.run()
         assert(self.test.wasRun)
     def testSetUp(self):
-        self.test.run()
+        #self.test.run()
         assert(self.test.wasSetUp)
 TestCaseTest("testRunning").run()
 TestCaseTest("testSetUp").run()
