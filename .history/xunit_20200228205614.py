@@ -15,13 +15,13 @@ class WasRun(TestCase):
         self.wasRun = 1
 
 class TestCaseTest(TestCase):
-    def setUp(self):
-        self.test = WasRun("testMethod")
     def testRunning(self):
-        self.test.run()
-        assert(self.test.wasRun)
+        test = WasRun("testMethod")
+        test.run()
+        assert(test.wasRun)
     def testSetUp(self):
-        self.test.run()
-        assert(self.test.wasSetUp)
+        test = WasRun("testMethod")
+        test.run()
+        assert(test.wasSetUp)
 TestCaseTest("testRunning").run()
 TestCaseTest("testSetUp").run()
